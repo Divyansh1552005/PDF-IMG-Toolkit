@@ -1,8 +1,10 @@
 # PDF IMG Toolkit
 
-![PDF IMG Toolkit Logo](./public/logo.png)
+![PDF IMG Toolkit Logo](./public/logo2.png)
 
 A professional desktop application for PDF and image manipulation tasks. This repository contains the official website and landing page for the PDF IMG Toolkit desktop application.
+
+🌐 **Live Website**: [https://pdf-img-editor-converter-toolkit-so.vercel.app/](https://pdf-img-editor-converter-toolkit-so.vercel.app/)
 
 ## 🌐 Website Overview
 
@@ -169,7 +171,7 @@ Need help or have questions?
 
 - **Email**: [officialdslc1552005@gmail.com](mailto:officialdslc1552005@gmail.com)
 - **GitHub Issues**: [Create an issue](https://github.com/Divyansh1552005/PDF-IMG-Toolkit/issues)
-- **Website**: [PDF IMG Toolkit](https://your-website-domain.com)
+- **Website**: [PDF IMG Toolkit](https://pdf-img-editor-converter-toolkit-so.vercel.app/)
 
 ## 💖 Donation
 
@@ -211,6 +213,6 @@ Your support helps maintain and improve the application for everyone!
 
 **Made with ❤️ by [Divyansh](https://github.com/Divyansh1552005)**
 
-[Download Now](https://your-website-domain.com/download) • [View Documentation](https://your-website-domain.com/about) • [Report Bug](https://github.com/Divyansh1552005/PDF-IMG-Toolkit/issues)
+[Download Now](https://pdf-img-editor-converter-toolkit-so.vercel.app/download) • [View Documentation](https://pdf-img-editor-converter-toolkit-so.vercel.app/about) • [Report Bug](https://github.com/Divyansh1552005/PDF-IMG-Toolkit/issues)
 
 </div>
