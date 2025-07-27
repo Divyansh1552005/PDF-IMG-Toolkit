@@ -1,12 +1,20 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Footer() {
   const currentYear = new Date().getFullYear()
+  const navigate = useNavigate()
 
   const handleDonateLinkClick = () => {
     // Navigate to About page and scroll to donation/support section
-    window.location.href = '/about#support-section'
+    navigate('/about')
+    // Small delay to ensure page loads before scrolling
+    setTimeout(() => {
+      const element = document.getElementById('support-section')
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }, 100)
   }
 
   return (
