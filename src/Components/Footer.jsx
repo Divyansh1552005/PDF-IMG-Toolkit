@@ -17,6 +17,12 @@ function Footer() {
     }, 100)
   }
 
+  const handleNavLinkClick = (path) => {
+    navigate(path)
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden">
       {/* Background Pattern */}
@@ -59,22 +65,31 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-6 text-blue-400">Navigation</h3>
             <ul className="space-y-4">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group">
+                <button 
+                  onClick={() => handleNavLinkClick('/')}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group cursor-pointer bg-transparent border-none p-0"
+                >
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
                   <span>Home</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/download" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group">
+                <button 
+                  onClick={() => handleNavLinkClick('/download')}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group cursor-pointer bg-transparent border-none p-0"
+                >
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
                   <span>Download</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group">
+                <button 
+                  onClick={() => handleNavLinkClick('/about')}
+                  className="text-gray-300 hover:text-white transition-colors duration-200 text-sm flex items-center space-x-2 group cursor-pointer bg-transparent border-none p-0"
+                >
                   <span className="w-1.5 h-1.5 bg-blue-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
                   <span>About Us</span>
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -152,25 +167,31 @@ function Footer() {
                   <span>Contact Support</span>
                 </a>
               </li>
-              <li>
-                <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-all duration-200 text-sm flex items-center space-x-3 group">
+                            <li>
+                <button 
+                  onClick={() => handleNavLinkClick('/privacy-policy')}
+                  className="text-gray-300 hover:text-white transition-all duration-200 text-sm flex items-center space-x-3 group cursor-pointer bg-transparent border-none p-0"
+                >
                   <div className="p-1.5 rounded-lg bg-gray-800 group-hover:bg-gray-700 transition-colors duration-200">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
                   <span>Privacy Policy</span>
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/terms-of-service" className="text-gray-300 hover:text-white transition-all duration-200 text-sm flex items-center space-x-3 group">
+                <button 
+                  onClick={() => handleNavLinkClick('/terms-of-service')}
+                  className="text-gray-300 hover:text-white transition-all duration-200 text-sm flex items-center space-x-3 group cursor-pointer bg-transparent border-none p-0"
+                >
                   <div className="p-1.5 rounded-lg bg-gray-800 group-hover:bg-gray-700 transition-colors duration-200">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                   <span>Terms of Service</span>
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
